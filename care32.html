@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpana Care32 Dental Clinic | Best Dentist in Warangal</title>
+    <meta name="description" content="Warangal's most trusted dental clinic. Expert care by Dr. Kalpana Martha in Cosmetic Dentistry, Implants, Root Canal and more. 4.9★ on Google.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dentalBlue: '#1E88E5',
+                        dentalTeal: '#26A69A',
+                        dentalSoft: '#F0F7FF',
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .masonry { column-count: 1; column-gap: 1rem; }
+        @media (min-width: 640px) { .masonry { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry { column-count: 3; } }
+        .masonry-item { break-inside: avoid; margin-bottom: 1rem; }
+        .glass-nav { background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); }
+        .hero-img { filter: brightness(0.25) saturate(0.6); }
+        .tag { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-bottom: 6px; }
+        .tag-before { background: #fde8e8; color: #c0392b; }
+        .tag-after  { background: #e8fdf0; color: #1a7a40; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item img { transition: transform 0.4s ease; }
+        input:invalid.touched, select:invalid.touched { border-color: #ef4444 !important; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+<!-- Floating Buttons -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <a href="https://wa.me/918328679049" target="_blank" title="WhatsApp" class="bg-green-500 text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:08328679049" title="Call" class="bg-dentalBlue text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center">
+        <i class="fas fa-phone text-xl"></i>
+    </a>
+</div>
+
+<!-- NAV -->
+<nav class="glass-nav fixed w-full z-40 top-0 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold text-dentalBlue">CARE<span class="text-orange-500">32</span></span>
+            <span class="hidden md:block text-xs font-semibold text-gray-400 uppercase tracking-widest">Dental · Warangal</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#about"    class="text-gray-600 hover:text-dentalBlue font-medium text-sm transition">About</a>
+            <a href="#services" class="text-gray-600 hover:text-dentalBlue font-medium text-sm transition">Services</a>
+            <a href="#results"  class="text-gray-600 hover:text-dentalBlue font-medium text-sm transition">Results</a>
+            <a href="#gallery"  class="text-gray-600 hover:text-dentalBlue font-medium text-sm transition">Gallery</a>
+            <a href="#enquiry"  class="bg-dentalBlue text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-blue-700 transition shadow">Book Now</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-gray-600 text-xl" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
+        <a href="#about"    class="text-gray-700 font-medium" onclick="this.closest('#mobileMenu').classList.add('hidden')">About</a>
+        <a href="#services" class="text-gray-700 font-medium" onclick="this.closest('#mobileMenu').classList.add('hidden')">Services</a>
+        <a href="#results"  class="text-gray-700 font-medium" onclick="this.closest('#mobileMenu').classList.add('hidden')">Results</a>
+        <a href="#gallery"  class="text-gray-700 font-medium" onclick="this.closest('#mobileMenu').classList.add('hidden')">Gallery</a>
+        <a href="#enquiry"  class="bg-dentalBlue text-white px-5 py-2 rounded-full font-semibold text-sm text-center">Book Now</a>
+    </div>
+</nav>
+
+<!-- HERO — uses clinic exterior photo (2.jpg) as full background -->
+<section class="relative h-[95vh] flex items-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="2.jpg" alt="Care32 Dental Clinic Exterior" class="w-full h-full object-cover hero-img">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+        <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur text-white border border-white/30 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
+                <i class="fas fa-star text-yellow-400"></i> 4.9 Star Rated · 179 Google Reviews
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5">
+                Warangal's Most<br><span class="text-blue-300">Trusted</span> Smile Care
+            </h1>
+            <p class="text-lg text-blue-100 mb-8 leading-relaxed max-w-xl">
+                Expert dental treatment by Dr. Kalpana Martha at JPN Road, Girmajipet. Advanced technology, painless procedures, a clinic built around your comfort.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#enquiry" class="bg-dentalBlue text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-xl flex items-center justify-center gap-2">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </a>
+                <a href="tel:08328679049" class="bg-white/15 backdrop-blur border-2 border-white/50 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/25 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="bg-dentalBlue text-white py-6">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div><p class="text-3xl font-bold">4.9 <span class="text-yellow-300 text-xl">★</span></p><p class="text-xs opacity-80 uppercase tracking-wide mt-1">Google Rating</p></div>
+        <div><p class="text-3xl font-bold">179+</p><p class="text-xs opacity-80 uppercase tracking-wide mt-1">Happy Patients</p></div>
+        <div><p class="text-3xl font-bold">10+</p><p class="text-xs opacity-80 uppercase tracking-wide mt-1">Years Experience</p></div>
+        <div><p class="text-3xl font-bold">F.I.C.O.I</p><p class="text-xs opacity-80 uppercase tracking-wide mt-1">Implant Certified</p></div>
+    </div>
+</div>
+
+<!-- ABOUT — uses Dr. Kalpana Martha's photo (10.jpg) -->
+<section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="10.jpg" alt="Dr. Kalpana Martha — Cosmetic Dental Surgeon" class="rounded-3xl shadow-2xl w-full object-cover object-top" style="aspect-ratio:4/5; object-position: top center;">
+                <div class="absolute -bottom-5 -right-5 bg-dentalTeal text-white p-6 rounded-2xl shadow-xl hidden md:block text-center">
+                    <p class="text-2xl font-bold">10+</p>
+                    <p class="text-xs opacity-90 mt-1">Years<br>Experience</p>
+                </div>
+                <div class="absolute -top-5 -left-5 w-28 h-28 bg-blue-100 rounded-full -z-10 hidden md:block"></div>
+            </div>
+            <div>
+                <p class="text-dentalBlue font-bold text-xs uppercase tracking-widest mb-3">Meet Our Specialist</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-2">Dr. Kalpana Martha</h2>
+                <p class="text-dentalTeal font-semibold mb-5">Cosmetic Dental Surgeon · Masters in Oral Implantology (F.I.C.O.I)</p>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    "We understand the needs and comfort level of patients, established as one of the renowned Dental Clinics in Warangal Tri-Cities. Our mission is to provide high-quality dental care in a spacious, friendly environment where every patient feels like family."
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-center gap-2 text-gray-700"><i class="fas fa-check-circle text-dentalBlue"></i> Patient-Centric Care</div>
+                    <div class="flex items-center gap-2 text-gray-700"><i class="fas fa-check-circle text-dentalBlue"></i> Advanced Implants</div>
+                    <div class="flex items-center gap-2 text-gray-700"><i class="fas fa-check-circle text-dentalBlue"></i> Sterilized Environment</div>
+                    <div class="flex items-center gap-2 text-gray-700"><i class="fas fa-check-circle text-dentalBlue"></i> Painless Procedures</div>
+                    <div class="flex items-center gap-2 text-gray-700"><i class="fas fa-check-circle text-dentalBlue"></i> Digital Diagnostics</div>
+                    <div class="flex items-center gap-2 text-gray-700"><i class="fas fa-check-circle text-dentalBlue"></i> Community Outreach</div>
+                </div>
+                <div class="bg-dentalSoft border-l-4 border-dentalBlue rounded-r-2xl p-5">
+                    <p class="italic text-gray-700">"Smile is the best outfit. Our team is committed to restoring your confidence with every treatment."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES — uses clinic interior photos (1.jpg, 3.jpg, 4.jpg) -->
+<section id="services" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Specialty Services</h2>
+            <p class="text-gray-500 max-w-xl mx-auto">Comprehensive dental solutions powered by digital technology and expert hands.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 — Dental Implants (uses chair photo 1.jpg) -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow overflow-hidden group">
+                <div class="overflow-hidden h-48">
+                    <img src="1.jpg" alt="Modern dental treatment chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-7">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-tooth text-xl text-dentalBlue"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Dental Implants</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Permanent solutions for missing teeth using the world-renowned F.I.C.O.I techniques. Look, feel, and function like natural teeth.</p>
+                </div>
+            </div>
+            <!-- Card 2 — Digital Diagnostics (uses monitor photo 3.jpg) -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow overflow-hidden group">
+                <div class="overflow-hidden h-48">
+                    <img src="3.jpg" alt="Digital diagnostic monitor showing dental X-ray" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-7">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-desktop text-xl text-dentalTeal"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Digital Diagnostics</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Intraoral cameras and digital X-rays let you see exactly what we see — no guesswork, just precise and transparent care.</p>
+                </div>
+            </div>
+            <!-- Card 3 — Root Canal / General (uses operatory photo 4.jpg) -->
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow overflow-hidden group">
+                <div class="overflow-hidden h-48">
+                    <img src="4.jpg" alt="Fully equipped dental operatory" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-7">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-vial text-xl text-dentalBlue"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Root Canal (RCT)</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Save your natural teeth with our painless, single-visit root canal treatments in a fully sterilized environment.</p>
+                </div>
+            </div>
+        </div>
+        <!-- More services pill row -->
+        <div class="mt-8 bg-white border border-gray-100 rounded-2xl px-8 py-5 flex flex-wrap justify-center gap-6 shadow-sm">
+            <span class="flex items-center gap-2 text-gray-600 text-sm font-medium"><i class="fas fa-circle text-[7px] text-dentalBlue"></i>Cosmetic Dentistry</span>
+            <span class="flex items-center gap-2 text-gray-600 text-sm font-medium"><i class="fas fa-circle text-[7px] text-dentalBlue"></i>Orthodontics / Braces</span>
+            <span class="flex items-center gap-2 text-gray-600 text-sm font-medium"><i class="fas fa-circle text-[7px] text-dentalBlue"></i>Teeth Whitening</span>
+            <span class="flex items-center gap-2 text-gray-600 text-sm font-medium"><i class="fas fa-circle text-[7px] text-dentalBlue"></i>Children's Dentistry</span>
+            <span class="flex items-center gap-2 text-gray-600 text-sm font-medium"><i class="fas fa-circle text-[7px] text-dentalBlue"></i>Full Mouth Reconstruction</span>
+            <span class="flex items-center gap-2 text-gray-600 text-sm font-medium"><i class="fas fa-circle text-[7px] text-dentalBlue"></i>General Checkups</span>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-20 bg-dentalBlue text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+        <i class="fas fa-tooth text-[28rem]"></i>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl font-bold mb-14">Why Patients Choose Care32</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+            <div><p class="text-5xl font-bold">4.9</p><div class="text-yellow-400 my-2 text-lg">★★★★★</div><p class="text-sm opacity-90 uppercase tracking-wide">Google Rating</p></div>
+            <div><p class="text-5xl font-bold">179+</p><p class="text-sm opacity-90 uppercase tracking-wide mt-3">Verified Reviews</p></div>
+            <div><i class="fas fa-hospital text-4xl mb-3 block"></i><p class="text-sm opacity-90 uppercase tracking-wide">Spacious Clinic</p></div>
+            <div><i class="fas fa-user-md text-4xl mb-3 block"></i><p class="text-sm opacity-90 uppercase tracking-wide">Expert Surgeon</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- BEFORE & AFTER RESULTS — uses photos 6,7,8,9,11,12 -->
+<section id="results" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-gray-900 mb-3">Real Patient Results</h2>
+            <p class="text-gray-500 max-w-lg mx-auto">Every smile here is a real transformation done at Care32. See the work that earns us 4.9 stars.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Result 1: Accident trauma (6.jpg) -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="6.jpg" alt="Accident trauma repair before and after" class="w-full object-cover" style="max-height:320px">
+                <div class="p-4">
+                    <span class="tag tag-before">Before & After</span>
+                    <h5 class="font-bold text-gray-800">Accident Trauma Repair</h5>
+                    <p class="text-gray-500 text-xs mt-1">Complete restoration of broken teeth after road accident — same-day emergency treatment.</p>
+                </div>
+            </div>
+            <!-- Result 2: Full mouth reconstruction (7.jpg) -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="7.jpg" alt="Full mouth reconstruction result" class="w-full object-cover" style="max-height:320px">
+                <div class="p-4">
+                    <span class="tag tag-after">Treatment Result</span>
+                    <h5 class="font-bold text-gray-800">Full Mouth Reconstruction</h5>
+                    <p class="text-gray-500 text-xs mt-1">Complete denture and bridge work restoring full chewing function and natural aesthetics.</p>
+                </div>
+            </div>
+            <!-- Result 3: Smile correction (8.jpg) -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="8.jpg" alt="Smile correction bridge work" class="w-full object-cover" style="max-height:320px">
+                <div class="p-4">
+                    <span class="tag tag-before">Before & After</span>
+                    <h5 class="font-bold text-gray-800">Smile Correction</h5>
+                    <p class="text-gray-500 text-xs mt-1">Fixed bridge and crown work transforming chipped, misaligned teeth into a confident smile.</p>
+                </div>
+            </div>
+            <!-- Result 4: Orthodontic (9.jpg) -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="9.jpg" alt="Orthodontic alignment result" class="w-full object-cover" style="max-height:320px">
+                <div class="p-4">
+                    <span class="tag tag-before">Before & After</span>
+                    <h5 class="font-bold text-gray-800">Orthodontic Alignment</h5>
+                    <p class="text-gray-500 text-xs mt-1">Correcting crowded and misaligned teeth — a complete bite and smile transformation.</p>
+                </div>
+            </div>
+            <!-- Result 5: Full denture (11.jpg) -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="11.jpg" alt="Full denture restoration before and after" class="w-full object-cover" style="max-height:320px">
+                <div class="p-4">
+                    <span class="tag tag-before">Before & After</span>
+                    <h5 class="font-bold text-gray-800">Full Denture Restoration</h5>
+                    <p class="text-gray-500 text-xs mt-1">Severely damaged teeth replaced with full upper and lower dentures — new lease on life.</p>
+                </div>
+            </div>
+            <!-- Result 6: Crown / cosmetic (12.jpg) -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="12.jpg" alt="Crown and cosmetic dental work" class="w-full object-cover" style="max-height:320px">
+                <div class="p-4">
+                    <span class="tag tag-before">Before & After</span>
+                    <h5 class="font-bold text-gray-800">Crown & Cosmetic Work</h5>
+                    <p class="text-gray-500 text-xs mt-1">Broken and stained front teeth restored with ceramic crowns for a naturally beautiful finish.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-center text-3xl font-bold mb-14">What Our Patients Say</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-dentalSoft p-8 rounded-3xl border border-blue-100">
+                <div class="text-orange-400 text-lg mb-4">★★★★★</div>
+                <p class="text-gray-700 italic mb-6">"Quality dental care with experienced doctors in a spacious environment."</p>
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-dentalBlue rounded-full flex items-center justify-center text-white font-bold text-sm">G</div><p class="font-bold text-sm">Google Local Guide</p></div>
+            </div>
+            <div class="bg-dentalSoft p-8 rounded-3xl border border-blue-100">
+                <div class="text-orange-400 text-lg mb-4">★★★★★</div>
+                <p class="text-gray-700 italic mb-6">"Nice ambience and friendly doctor and excellent service."</p>
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-dentalBlue rounded-full flex items-center justify-center text-white font-bold text-sm">P</div><p class="font-bold text-sm">Patient Review</p></div>
+            </div>
+            <div class="bg-dentalSoft p-8 rounded-3xl border border-blue-100">
+                <div class="text-orange-400 text-lg mb-4">★★★★★</div>
+                <p class="text-gray-700 italic mb-6">"Good response from staff and had great experience."</p>
+                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-dentalBlue rounded-full flex items-center justify-center text-white font-bold text-sm">V</div><p class="font-bold text-sm">Verified Customer</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY — all 12 photos in masonry with lightbox -->
+<section id="gallery" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-gray-900 mb-3">Inside Kalpana Care32</h2>
+            <p class="text-gray-500">A clinic built for your comfort — our space, our team, and our smile transformations.</p>
+        </div>
+        <div class="masonry">
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(0)">
+                <img src="2.jpg" alt="Care32 Clinic Exterior" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Care32 Clinic Exterior — JPN Road</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(1)">
+                <img src="1.jpg" alt="Modern Blue Dental Chair" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Modern Treatment Unit</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(2)">
+                <img src="3.jpg" alt="Digital diagnostic monitor" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Digital Intraoral Camera & Monitor</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(3)">
+                <img src="4.jpg" alt="Fully equipped operatory" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Fully Equipped Operatory</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(4)">
+                <img src="5.jpg" alt="Community school dental health camp" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">School Health Camp — Community Outreach</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(5)">
+                <img src="10.jpg" alt="Dr. Kalpana Martha" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Dr. Kalpana Martha — Lead Surgeon</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(6)">
+                <img src="6.jpg" alt="Accident trauma repair result" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Accident Trauma Repair</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(7)">
+                <img src="7.jpg" alt="Full mouth reconstruction" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Full Mouth Reconstruction</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(8)">
+                <img src="8.jpg" alt="Smile correction result" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Smile Correction</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(9)">
+                <img src="9.jpg" alt="Orthodontic alignment" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Orthodontic Alignment Result</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(10)">
+                <img src="11.jpg" alt="Full denture restoration" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Full Denture Restoration</div>
+            </div>
+            <div class="masonry-item gallery-item cursor-pointer overflow-hidden rounded-2xl shadow-sm" onclick="openLb(11)">
+                <img src="12.jpg" alt="Crown and cosmetic work" class="w-full">
+                <div class="p-3 bg-white text-sm font-semibold text-gray-700">Crown & Cosmetic Work</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ENQUIRY FORM -->
+<section id="enquiry" class="py-24 bg-dentalSoft">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-blue-100">
+            <div class="bg-dentalBlue p-10 text-white text-center">
+                <h2 class="text-3xl font-bold mb-2">Book an Appointment or Ask Us Anything</h2>
+                <p class="opacity-90 text-sm">We respond within 2 hours. Walk-ins also welcome at JPN Road, Warangal.</p>
+            </div>
+            <form id="apptForm" class="p-10 grid grid-cols-1 md:grid-cols-2 gap-6" onsubmit="submitForm(event)" novalidate>
+                <div class="flex flex-col gap-1">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Full Name *</label>
+                    <input type="text" id="fname" required placeholder="Your full name" class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Phone Number *</label>
+                    <input type="tel" id="fphone" required placeholder="10-digit mobile number" class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Email Address</label>
+                    <input type="email" placeholder="optional" class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Age</label>
+                    <input type="number" placeholder="Your age" min="1" max="120" class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Select Service *</label>
+                    <select id="fservice" required class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm text-gray-700">
+                        <option value="">Choose a service</option>
+                        <option>General Checkup</option>
+                        <option>Teeth Cleaning</option>
+                        <option>Teeth Whitening</option>
+                        <option>Root Canal Treatment</option>
+                        <option>Dental Implants</option>
+                        <option>Orthodontics / Braces</option>
+                        <option>Cosmetic Dentistry</option>
+                        <option>Children's Dentistry</option>
+                        <option>Full Mouth Reconstruction</option>
+                        <option>Other / Not Sure</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Preferred Date</label>
+                    <input type="date" class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm">
+                </div>
+                <div class="flex flex-col gap-1 md:col-span-2">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Preferred Time</label>
+                    <select class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm">
+                        <option>Morning (9 AM – 12 PM)</option>
+                        <option>Afternoon (12 PM – 4 PM)</option>
+                        <option>Evening (4 PM – 9 PM)</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-1 md:col-span-2">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wide">Message / Describe your concern</label>
+                    <textarea rows="4" placeholder="Tell us about your dental concern or any questions you have..." class="p-4 rounded-xl bg-gray-50 border border-gray-200 focus:border-dentalBlue outline-none transition text-sm resize-none"></textarea>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full bg-dentalBlue text-white font-bold py-5 rounded-2xl hover:bg-blue-700 transition shadow-lg text-lg">
+                        Submit Enquiry <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </form>
+            <div id="successMsg" class="hidden p-12 text-center">
+                <i class="fas fa-check-circle text-green-500 text-6xl mb-5 block"></i>
+                <h3 class="text-2xl font-bold text-green-700 mb-2">Enquiry Sent!</h3>
+                <p id="successText" class="text-gray-600"></p>
+                <a href="#" onclick="resetForm()" class="inline-block mt-6 text-dentalBlue font-semibold text-sm underline">Submit another enquiry</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATION & CONTACT — uses exterior photo (2.jpg) -->
+<section id="contact" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-14 items-start">
+            <div>
+                <h2 class="text-3xl font-bold mb-10">How to Reach Us</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full shadow flex items-center justify-center text-dentalBlue flex-shrink-0"><i class="fas fa-map-marker-alt"></i></div>
+                        <div><h4 class="font-bold mb-1">Address</h4><p class="text-gray-500 text-sm leading-relaxed">Jayaprakash Narayan Road, near Satya Hospital Street, opposite Vishwakarma Veedhi, Girmajipet, Warangal, Telangana 506002</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full shadow flex items-center justify-center text-dentalBlue flex-shrink-0"><i class="fas fa-phone"></i></div>
+                        <div><h4 class="font-bold mb-1">Phone</h4><p class="text-gray-500 text-sm">083286 79049</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full shadow flex items-center justify-center text-dentalBlue flex-shrink-0"><i class="fas fa-clock"></i></div>
+                        <div><h4 class="font-bold mb-1">Clinic Hours</h4><p class="text-gray-500 text-sm">Monday – Saturday: 9:30 AM – 9:00 PM<br>Sunday: By Appointment Only</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full shadow flex items-center justify-center text-blue-600 flex-shrink-0"><i class="fab fa-facebook"></i></div>
+                        <div><h4 class="font-bold mb-1">Facebook</h4><p class="text-gray-500 text-sm">facebook.com/care32dental.warangal</p></div>
+                    </div>
+                </div>
+                <img src="2.jpg" alt="Care32 Clinic Building on JPN Road" class="rounded-2xl shadow-lg border-4 border-white mt-10 w-full object-cover" style="max-height:220px">
+            </div>
+            <div class="h-[550px] rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.6190470659976!2d79.59160537596001!3d17.973003086300454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f6696b9f7a7%3A0x67c00645d94cc815!2sCARE%2032%20Dental%20Clinic%20%26%20Implant%20Center!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white py-14">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <div class="mb-6"><span class="text-3xl font-bold">CARE<span class="text-orange-500">32</span></span></div>
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="https://facebook.com/care32dental.warangal" target="_blank" class="text-2xl text-gray-400 hover:text-dentalBlue transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-2xl text-gray-400 hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918328679049" class="text-2xl text-gray-400 hover:text-green-400 transition"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:08328679049" class="text-2xl text-gray-400 hover:text-dentalBlue transition"><i class="fas fa-phone-square-alt"></i></a>
+        </div>
+        <p class="text-gray-400 text-sm mb-1">Kalpana Care32 Dental Clinic & Implant Center · JPN Road, Girmajipet, Warangal 506002</p>
+        <p class="text-gray-600 text-xs">© 2024 Kalpana Care32. All Rights Reserved. Serving Warangal Tri-Cities.</p>
+    </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[999] hidden bg-black/95 items-center justify-center p-4" style="display:none">
+    <button onclick="closeLb()" class="absolute top-5 right-6 text-white text-5xl leading-none hover:text-gray-300">&times;</button>
+    <button onclick="shiftLb(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-dentalBlue"><i class="fas fa-chevron-left"></i></button>
+    <button onclick="shiftLb(1)"  class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-dentalBlue"><i class="fas fa-chevron-right"></i></button>
+    <img id="lbImg" src="" alt="" class="max-w-full max-h-[88vh] rounded-xl shadow-2xl object-contain">
+    <p id="lbCap" class="absolute bottom-5 text-white text-sm font-medium text-center w-full opacity-80"></p>
+</div>
+
+<script>
+const imgs = [
+    { src:'2.jpg',  cap:'Care32 Clinic Exterior — JPN Road, Warangal' },
+    { src:'1.jpg',  cap:'Modern Blue Dental Treatment Unit' },
+    { src:'3.jpg',  cap:'Digital Intraoral Camera & Diagnostic Monitor' },
+    { src:'4.jpg',  cap:'Fully Equipped Dental Operatory' },
+    { src:'5.jpg',  cap:'School Health Camp — Community Outreach by Care32' },
+    { src:'10.jpg', cap:'Dr. Kalpana Martha — Cosmetic Dental Surgeon, F.I.C.O.I' },
+    { src:'6.jpg',  cap:'Before & After — Accident Trauma Repair' },
+    { src:'7.jpg',  cap:'Full Mouth Reconstruction Result' },
+    { src:'8.jpg',  cap:'Smile Correction — Bridge & Crown Work' },
+    { src:'9.jpg',  cap:'Before & After — Orthodontic Alignment' },
+    { src:'11.jpg', cap:'Before & After — Full Denture Restoration' },
+    { src:'12.jpg', cap:'Before & After — Crown & Cosmetic Work' }
+];
+let cur = 0;
+
+function openLb(i) {
+    cur = i;
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lbImg').src = imgs[i].src;
+    document.getElementById('lbCap').innerText = imgs[i].cap;
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+function closeLb() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = '';
+}
+function shiftLb(d) {
+    cur = (cur + d + imgs.length) % imgs.length;
+    document.getElementById('lbImg').src = imgs[cur].src;
+    document.getElementById('lbCap').innerText = imgs[cur].cap;
+}
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') shiftLb(-1);
+    if (e.key === 'ArrowRight') shiftLb(1);
+});
+
+function submitForm(e) {
+    e.preventDefault();
+    const name  = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const svc   = document.getElementById('fservice').value;
+    if (!name || !phone || !svc) {
+        alert('Please fill in all required fields (Name, Phone, Service).');
+        return;
+    }
+    document.getElementById('apptForm').style.display = 'none';
+    const s = document.getElementById('successMsg');
+    s.classList.remove('hidden');
+    document.getElementById('successText').innerText =
+        `Thank you ${name}! We'll call you at ${phone} within 2 hours to confirm your appointment. — Kalpana Care32 Team`;
+}
+function resetForm() {
+    document.getElementById('apptForm').style.display = 'grid';
+    document.getElementById('successMsg').classList.add('hidden');
+    document.getElementById('apptForm').reset();
+}
+</script>
+</body>
+</html>
